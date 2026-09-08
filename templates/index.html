@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>El Armario de Barbie</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎀 El Armario de Barbie 🎀</h1>
+        <p>Organiza toda la ropa y accesorios de Barbie</p>
+    </header>
+
+    <main>
+
+        <div class="titulo">
+            <h2>👗 Mi armario</h2>
+
+            <a href="/agregar" class="boton">
+                + Agregar prenda
+            </a>
+        </div>
+
+        <section class="armario">
+
+            {% if prendas %}
+
+                {% for prenda in prendas %}
+
+                    <div class="prenda">
+
+                        {% if prenda["imagen"] %}
+                            <img src="{{ url_for('static', filename='IMG/' + prenda['imagen']) }}">
+                        {% endif %}
+
+                        <h3>{{ prenda["nombre"] }}</h3>
+
+                        <p>👗 Tipo: {{ prenda["tipo"] }}</p>
+                        <p>🎨 Color: {{ prenda["color"] }}</p>
+                        <p>🌸 Temporada: {{ prenda["temporada"] }}</p>
+                        <p>💰 Precio: ${{ prenda["precio"] }}</p>
+
+                        <a href="/editar/{{ prenda['id'] }}">Editar</a>
+                        <a href="/eliminar/{{ prenda['id'] }}"
+                        onclick="return confirm('¿Seguro que quieres eliminar esta prenda?')">Eliminar</a>
+
+                    </div>
+
+                {% endfor %}
+
+            {% else %}
+
+                <div class="vacio">
+                    <h2>👗 Tu armario está vacío</h2>
+                    <p>¡Agrega la primera prenda de Barbie!</p>
+                </div>
+
+            {% endif %}
+
+        </section>
+
+    </main>
+
+</body>
+</html>

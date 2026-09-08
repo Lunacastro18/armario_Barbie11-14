@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Editar prenda | El Armario de Barbie</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>Editar prenda</h1>
+        <p>Actualiza la información de tu prenda</p>
+    </header>
+
+    <main>
+
+        <form action="/editar/{{ prenda['id'] }}" method="POST">
+
+            <label>Nombre de la prenda:</label>
+            <input
+                type="text"
+                name="nombre"
+                value="{{ prenda['nombre'] }}"
+                required
+            >
+
+            <label>Tipo:</label>
+            <input
+                type="text"
+                name="tipo"
+                value="{{ prenda['tipo'] }}"
+                required
+            >
+
+            <label>Color:</label>
+            <input
+                type="text"
+                name="color"
+                value="{{ prenda['color'] }}"
+                required
+            >
+
+            <label>Temporada:</label>
+            <input
+                type="text"
+                name="temporada"
+                value="{{ prenda['temporada'] }}"
+                required
+            >
+
+            <label>Precio:</label>
+            <input
+                type="number"
+                name="precio"
+                value="{{ prenda['precio'] }}"
+                required
+            >
+
+            <label>Imagen:</label>
+            <input
+                type="text"
+                name="imagen"
+                value="{{ prenda['imagen'] or '' }}"
+            >
+
+            <button type="submit">
+                💗 Guardar cambios
+            </button>
+
+        </form>
+
+        <div style="text-align: center;">
+            <a href="/">⬅ Volver al armario</a>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

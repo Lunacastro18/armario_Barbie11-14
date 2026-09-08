@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agregar prenda</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>Agregar prenda al armario</h1>
+
+    <form action="/agregar" method="POST">
+
+        <label>Nombre de la prenda:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Tipo:</label>
+        <input type="text" name="tipo" required>
+
+        <label>Color:</label>
+        <input type="text" name="color" required>
+
+        <label>Temporada:</label>
+        <input type="text" name="temporada" required>
+
+        <label>Precio:</label>
+        <input type="number" name="precio" required>
+
+        <label>Imagen:</label>
+        <input type="text" name="imagen">
+
+        <button type="submit">
+            💗 Guardar prenda
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="/">⬅ Volver al armario</a>
+
+</body>
+
+</html>
