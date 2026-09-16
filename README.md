@@ -1,3 +1,6 @@
+##INTEGRANTES
+*LUNA CASTRO
+*SOFIA LOZANO
 # El Armario de Barbie
 
 ## Descripción
