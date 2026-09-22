@@ -26,38 +26,32 @@ El proyecto cuenta con una interfaz temática inspirada en Barbie, utilizando co
 * Editar la información de una prenda.
 * Eliminar prendas.
 * Agregar imágenes a las prendas.
+* Registrar el precio de cada prenda.
+* Registrar el color.
+* Registrar el tipo de prenda.
+* Registrar la temporada.
+* Interfaz temática inspirada en Barbie.
+* Almacenamiento de información mediante SQLite.
 
- Registrar el precio de cada prenda.
+## Tecnologías utilizadas
 
- Registrar el color.
+* Python
 
- Registrar el tipo de prenda.
+* Flask
 
- Registrar la temporada.
+* SQLite
 
- Interfaz temática inspirada en Barbie.
+* HTML5
 
- Almacenamiento de información mediante SQLite.
+* CSS3
 
- Tecnologías utilizadas
+* JavaScript
 
-Python
+* Visual Studio Code
 
-Flask
+* Git
 
-SQLite
-
-HTML5
-
-CSS3
-
-JavaScript
-
-Visual Studio Code
-
-Git
-
-GitHub
+## GitHub
 
  Estructura del proyecto
 Armario-de-Barbie/
@@ -78,19 +72,16 @@ Armario-de-Barbie/
 ├── requirements.txt
 └── README.md
 
- Instalación
+## Instalación
 1. Clonar el repositorio
 
 Desde la terminal de Visual Studio Code:
-
 git clone URL_DE_TU_REPOSITORIO
-
-
 Después entra a la carpeta:
 
-cd Armario-de-Barbie
+## cd Armario-de-Barbie
 
-2. Crear un entorno virtual
+## 2. Crear un entorno virtual
 
 En Windows:
 
@@ -106,7 +97,7 @@ Si utilizas PowerShell:
 
 .\venv\Scripts\Activate.ps1
 
-3. Instalar las dependencias
+## 3. Instalar las dependencias
 
 Ejecuta:
 
@@ -142,22 +133,21 @@ La base de datos se encuentra en:
 database.db
 
 
-La tabla principal es:
+## La tabla principal es:
 
-prendas
+* prendas
 
-Campos
-Campo	Descripción
-id	Identificador único
-nombre	Nombre de la prenda
-tipo	Tipo de prenda
-color	Color de la prenda
-temporada	Temporada
-precio	Precio de la prenda
-imagen	Ruta de la imagen
- Funcionamiento
-
-El usuario puede realizar las siguientes operaciones:
+- Campos
+- Campo	Descripción
+- id	Identificador único
+- Nombre de la prenda
+- tipo	Tipo de prenda
+- Color de la prenda
+- Temporada
+- Precio de la prenda
+- Ruta de la imagen
+ ## Funcionamiento
+## El usuario puede realizar las siguientes operaciones:
 
         EL ARMARIO DE BARBIE
                   │
@@ -174,21 +164,21 @@ El usuario puede realizar las siguientes operaciones:
                   ▼
              SQLite
 
- Agregar una prenda
+ ## Agregar una prenda
 
 El usuario puede registrar:
 
-Nombre.
+- Nombre.
 
-Tipo.
+- Tipo.
 
-Color.
+- Color.
 
-Temporada.
+- Temporada.
 
-Precio.
+- Precio.
 
-Imagen.
+- Imagen.
 
 Los datos se almacenan en la base de datos.
 
