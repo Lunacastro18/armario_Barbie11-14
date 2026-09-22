@@ -1,5 +1,5 @@
- El Armario de Barbie
- Descripción
+## El Armario de Barbie
+ # Descripción
 
 El Armario de Barbie es una aplicación web creada para organizar y administrar prendas y accesorios de Barbie de una manera sencilla, visual y divertida.
 
@@ -7,29 +7,25 @@ La aplicación permite registrar, consultar, editar y eliminar prendas utilizand
 
 El proyecto cuenta con una interfaz temática inspirada en Barbie, utilizando colores y elementos visuales relacionados con la marca.
 
- Objetivo
+ ## Objetivo
 
-Crear una aplicación web que permita administrar digitalmente un inventario de prendas y accesorios de Barbie mediante operaciones CRUD:
+* Crear una aplicación web que permita administrar digitalmente un inventario de prendas y accesorios de Barbie mediante operaciones CRUD:
 
-Crear prendas.
+* Crear prendas.
 
-Consultar prendas.
+* Consultar prendas.
 
-Editar prendas.
+* Editar prendas.
 
-Eliminar prendas.
+* Eliminar prendas.
 
- Funcionalidades
+ ## Funcionalidades
 
- Agregar nuevas prendas.
-
- Ver todas las prendas registradas.
-
- Editar la información de una prenda.
-
- Eliminar prendas.
-
- Agregar imágenes a las prendas.
+* Agregar nuevas prendas.
+* Ver todas las prendas registradas.
+* Editar la información de una prenda.
+* Eliminar prendas.
+* Agregar imágenes a las prendas.
 
  Registrar el precio de cada prenda.
 
