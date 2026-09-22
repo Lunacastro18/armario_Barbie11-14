@@ -51,27 +51,6 @@ El proyecto cuenta con una interfaz temática inspirada en Barbie, utilizando co
 
 * Git
 
-## GitHub
-
- Estructura del proyecto
-Armario-de-Barbie/
-│
-├── static/
-│   ├── IMG/
-│   │   └── imágenes de las prendas
-│   │
-│   └── style.css
-│
-├── templates/
-│   ├── agregar.html
-│   ├── editar.html
-│   └── index.html
-│
-├── app.py
-├── database.db
-├── requirements.txt
-└── README.md
-
 ## Instalación
 1. Clonar el repositorio
 
@@ -203,25 +182,25 @@ static/IMG/
 
 La base de datos guarda la ruta o nombre de la imagen correspondiente.
 
- Diseño
+## Diseño
 
-La aplicación utiliza una estética inspirada en Barbie.
+° La aplicación utiliza una estética inspirada en Barbie.
 
-Colores principales
+- Colores principales
 
-Rosa.
+- Rosa.
 
-Rosa claro.
+- Rosa claro.
 
-Rosa oscuro.
+- Rosa oscuro.
 
-Blanco.
+- Blanco.
 
-Tonos pastel.
+- Tonos pastel.
 
 La interfaz utiliza tarjetas, botones y elementos visuales para presentar las prendas de forma clara y atractiva.
 
- Compatibilidad
+## Compatibilidad
 
 La aplicación está diseñada para funcionar en navegadores modernos como:
 
@@ -266,37 +245,22 @@ Conectar el repositorio:
 
 git remote add origin URL_DE_TU_REPOSITORIO
 
-
-Subir el proyecto:
-
-git branch -M main
-git push -u origin main
-
- Proyecto académico
-
-Proyecto: El Armario de Barbie
-Tipo: Aplicación web CRUD
-Backend: Flask
-Base de datos: SQLite
-Frontend: HTML, CSS y JavaScript
-Control de versiones: Git y GitHub
-
- Estado del proyecto
+## Estado del proyecto
 
 En desarrollo
 
-El proyecto puede ampliarse posteriormente con funcionalidades como:
+## El proyecto puede ampliarse posteriormente con funcionalidades como:
 
- Búsqueda de prendas.
+ - Búsqueda de prendas.
 
- Filtros por tipo, color o temporada.
+ - Filtros por tipo, color o temporada.
 
- Estadísticas del armario.
+ - Estadísticas del armario.
 
- Sistema de usuarios.
+ - Sistema de usuarios.
 
- Prendas favoritas.
+ - Prendas favoritas.
 
- Almacenamiento en la nube.
+ - Almacenamiento en la nube.
 
- Mejoras para dispositivos móviles.
+ - Mejoras para dispositivos móviles.
