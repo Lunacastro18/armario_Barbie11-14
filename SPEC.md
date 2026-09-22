@@ -1,21 +1,22 @@
- SPEC — El Armario de Barbie
+## SPEC — El Armario de Barbie
 
 Technical Specification
 
 Especificación técnica de la aplicación web El Armario de Barbie.
 
- 1. Información técnica
-Elemento	Tecnología
-Lenguaje	Python
-Framework	Flask
-Base de datos	SQLite
-Frontend	HTML5
-Estilos	CSS3
-Interactividad	JavaScript
-Editor	Visual Studio Code
-Control de versiones	Git
-Repositorio	GitHub
- 2. Arquitectura
+## 1. Información técnica
+- Elemento	Tecnología
+- Lenguaje	Python
+- Framework	Flask
+- Base de datos	SQLite
+- Frontend	HTML5
+- Estilos	CSS3
+- Interactividad	JavaScript
+- Editor	Visual Studio Code
+- Control de versiones	Git
+- Repositorio	GitHub
+  
+ ## 2. Arquitectura
 
 La aplicación utilizará una arquitectura web basada en Flask.
 
@@ -40,7 +41,7 @@ La aplicación utilizará una arquitectura web basada en Flask.
         │   HTML    │     │ database  │
         └───────────┘     └───────────┘
 
- 3. Estructura del proyecto
+## 3. Estructura del proyecto
 Armario-de-Barbie/
 │
 ├── docs/
@@ -63,20 +64,20 @@ Armario-de-Barbie/
 ├── requirements.txt
 └── README.md
 
- 4. Base de datos
+## 4. Base de datos
 
 El sistema utilizará SQLite.
 
-Archivo:
+## Archivo:
 
 database.db
 
 
-Tabla principal:
+## Tabla principal:
 
 prendas
 
- 5. Estructura de la tabla
+## 5. Estructura de la tabla
 Campo	Tipo	Restricciones	Descripción
 id	INTEGER	PRIMARY KEY	Identificador
 nombre	TEXT	NOT NULL	Nombre
@@ -96,7 +97,7 @@ CREATE TABLE prendas (
     imagen TEXT
 );
 
- 7. Rutas Flask
+## 7. Rutas Flask
 Página principal
 GET /
 
@@ -114,51 +115,51 @@ Función
 
 Mostrar el formulario para registrar una nueva prenda.
 
-Template
+## Template
 templates/agregar.html
 
-Agregar prenda — guardar
+## Agregar prenda — guardar
 POST /agregar
 
-Función
+## Función
 
 Recibir los datos del formulario y almacenarlos en SQLite.
 
-Datos
-nombre
-tipo
-color
-temporada
-precio
-imagen
+- Datos
+- nombre
+- tipo
+- color
+- temporada
+- precio
+- imagen
 
-Editar prenda
+## Editar prenda
 GET /editar/<id>
 
-Función
+## Función
 
 Obtener los datos de una prenda y mostrarlos en el formulario de edición.
 
-Template
+## Template
 templates/editar.html
 
-Actualizar prenda
+## Actualizar prenda
 POST /editar/<id>
 
-Función
+## Función
 
 Actualizar los datos de la prenda seleccionada.
 
-Eliminar prenda
+## Eliminar prenda
 GET /eliminar/<id>
 
-Función
+## Función
 
 Eliminar una prenda de la base de datos.
 
-Para una implementación futura se recomienda utilizar POST para operaciones destructivas.
+- Para una implementación futura se recomienda utilizar POST para operaciones destructivas.
 
- 8. Flujo de creación
+## 8. Flujo de creación
 Usuario
    │
    ▼
@@ -186,7 +187,7 @@ Validación
                    ▼
               Página inicio
 
- 9. Flujo de edición
+## 9. Flujo de edición
 Usuario
    │
    ▼
@@ -238,7 +239,7 @@ Confirmación
           ▼
      Página principal
 
- 11. Formulario de creación
+## 11. Formulario de creación
 
 El formulario de agregar.html deberá contener:
 
@@ -262,7 +263,7 @@ Imagen
 
 [ GUARDAR PRENDA ]
 
- 12. Formulario de edición
+## 12. Formulario de edición
 
 El formulario editar.html deberá cargar automáticamente los datos actuales de la prenda.
 
@@ -286,7 +287,7 @@ Imagen
 
 [ GUARDAR CAMBIOS ]
 
- 13. Vista principal
+## 13. Vista principal
 
 La página index.html mostrará las prendas utilizando tarjetas.
 
@@ -308,7 +309,7 @@ La página index.html mostrará las prendas utilizando tarjetas.
 
 Las tarjetas deberán organizarse mediante CSS Grid o Flexbox.
 
- 14. Diseño visual
+## 14. Diseño visual
 
 La interfaz deberá tener una temática inspirada en Barbie.
 
@@ -344,7 +345,7 @@ Mensajes de confirmación.
 
 Diseño responsive.
 
- 15. Gestión de imágenes
+## 15. Gestión de imágenes
 
 Las imágenes estarán almacenadas en:
 
@@ -365,7 +366,7 @@ En Flask/Jinja:
     alt="{{ prenda.nombre }}"
 >
 
- 16. Validaciones
+## 16. Validaciones
 
 El backend deberá validar la información recibida.
 
@@ -391,12 +392,12 @@ Debe ser un número.
 
 No debe aceptar valores negativos.
 
-Ejemplo:
+## Ejemplo:
 
 if precio < 0:
     # Mostrar mensaje de error
 
- 17. Seguridad básica
+ ## 17. Seguridad básica
 
 Se deberán aplicar buenas prácticas básicas:
 
@@ -414,7 +415,7 @@ Utilizar una SECRET_KEY segura.
 
 No guardar contraseñas ni información sensible en el repositorio.
 
- 18. Dependencias
+## 18. Dependencias
 
 El archivo requirements.txt deberá contener:
 
@@ -425,7 +426,7 @@ Instalación:
 
 pip install -r requirements.txt
 
- 19. Ejecución
+## 19. Ejecución
 
 Para ejecutar el proyecto:
 
@@ -436,7 +437,7 @@ La aplicación estará disponible normalmente en:
 
 http://127.0.0.1:5000
 
- 20. Pruebas funcionales
+ ## 20. Pruebas funcionales
 Prueba	Resultado esperado
 Agregar prenda	La prenda aparece en el inventario
 Consultar prendas	Se muestran las prendas guardadas
@@ -446,7 +447,8 @@ Agregar imagen	La imagen se muestra
 Precio inválido	Se muestra un error
 Campo vacío	Se solicita completar el campo
 Reiniciar aplicación	Los datos permanecen
- 21. Criterios técnicos de aceptación
+
+ ## 21. Criterios técnicos de aceptación
 
  Flask inicia correctamente.
 
@@ -474,7 +476,7 @@ Reiniciar aplicación	Los datos permanecen
 
  El proyecto puede almacenarse en GitHub.
 
- 22. Definición de terminado
+## 22. Definición de terminado
 
 El proyecto se considerará terminado cuando todas las operaciones CRUD funcionen correctamente y los datos se almacenen de forma persistente en SQLite.
 
