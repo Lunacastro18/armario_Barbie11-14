@@ -11,14 +11,14 @@ La aplicación permite registrar prendas, consultar la información guardada, ed
 
 ## Funcionalidades
 
-- 👗 Agregar nuevas prendas.
-- 👀 Ver todas las prendas registradas.
-- ✏️ Editar la información de una prenda.
-- 🗑️ Eliminar prendas.
-- 🖼️ Agregar imágenes a las prendas.
-- 💰 Registrar el precio de cada prenda.
-- 🎨 Registrar color, tipo y temporada.
-- 💗 Interfaz temática inspirada en Barbie.
+-  Agregar nuevas prendas.
+-  Ver todas las prendas registradas.
+-  Editar la información de una prenda.
+-  Eliminar prendas.
+-  Agregar imágenes a las prendas.
+-  Registrar el precio de cada prenda.
+-  Registrar color, tipo y temporada.
+-  Interfaz temática inspirada en Barbie.
 
 ## Tecnologías utilizadas
 
